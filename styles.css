@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-aroud;
+    background: #555;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card{
+    background: lightblue;
+    padding: 20px;
+    flex: 1;
+}
