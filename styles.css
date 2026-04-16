@@ -1,35 +1,77 @@
-body {
-    font-family: Arial;
-    margin: 0;
+body{
+    background:#f4f6f9;
 }
 
-header {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+header, footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:20px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-aroud;
-    background: #555;
+/* MENU Enfoque Mobile First */
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:15px;
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
-nav a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
+button{
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:#fff;
 }
 
-main{
-    display: flex;
-    gap: 10px;
-    padding: 10px;
+.menu button{
+    background:#0d2ec0;
+    padding:10px 18px;
+    font-size:16px;
+}
+
+/* Contenedor */
+
+.contenedor{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:20px;
 }
 
 .card{
-    background: lightblue;
-    padding: 20px;
-    flex: 1;
+    padding:20px;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card button{
+    margin-top:10px;
+    padding:8px 15px;
+    background:#2196F3;
+}
+
+/* Tablet */
+
+@media (min-width:768px){
+
+.menu{
+    flex-direction:row;
+    justify-content:center;
+}
+
+.contenedor{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+/* Escritorio */
+
+@media (min-width:1024px){
+    .contenedor{ grid-template-columns:1fr 1fr 1fr; }
 }
