@@ -50,7 +50,7 @@ button{
     background:#2196F3;
 }
 
-@media (min-width:48rem){
+@media (min-width:40rem){
 
 .menu{
     flex-direction:row;
