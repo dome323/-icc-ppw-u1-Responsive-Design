@@ -9,7 +9,7 @@ header, footer{
     padding:20px;
 }
 
-/* MENU MOBILE */
+/* MENU Enfoque Mobile First */
 
 .menu{
     display:flex;
@@ -33,7 +33,7 @@ button{
     font-size:16px;
 }
 
-/* CONTENEDOR */
+/* Contenedor */
 
 .contenedor{
     display:grid;
@@ -55,7 +55,7 @@ button{
     background:#2196F3;
 }
 
-/* TABLET */
+/* Tablet */
 
 @media (min-width:768px){
 
@@ -70,7 +70,7 @@ button{
 
 }
 
-/* DESKTOP */
+/* Escritorio */
 
 @media (min-width:1024px){
     .contenedor{ grid-template-columns:1fr 1fr 1fr; }
